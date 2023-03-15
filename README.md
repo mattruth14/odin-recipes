@@ -13,3 +13,17 @@ I have completed the freeCodeCamp.org responsive web design course already and w
 <a href="https://www.freepik.com/free-photo/top-view-tasty-ham-sandwiches-with-toasts-inside-plate-dark-surface_14268446.htm#query=cheese%20toastie&position=7&from_view=search&track=ais">Image by mdjaff</a> on Freepik
 
 <a href="https://www.freepik.com/free-photo/garlic-soup-topped-with-croutons-bowl-wooden-table_24188493.htm#&position=0&from_view=collections">Image by chandlervid85</a> on Freepik
+
+### Bibliography:
+
+Allrecipes, 2023. Easy Homemade Pizza Dough. [Online] 
+Available at: https://www.allrecipes.com/recipe/20171/quick-and-easy-pizza-crust/
+[Accessed 15 March 2023].
+
+Allrecipes, 2022. Grilled Cheese Sandwich. [Online] 
+Available at: https://www.allrecipes.com/recipe/23891/grilled-cheese-sandwich/
+[Accessed 15 March 2023].
+
+Allrecipes, 2023. Fresh Tomato Soup. [Online] 
+Available at: https://www.allrecipes.com/recipe/39544/garden-fresh-tomato-soup/
+[Accessed 15 March 2023].
