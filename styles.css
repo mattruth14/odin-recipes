@@ -4,7 +4,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
 a {
@@ -15,6 +14,8 @@ a {
 body {
     background-color: #121212;
     color: cornsilk;
+    min-height: 100vh;
+    position: relative;
 }
 
 header {
@@ -24,7 +25,7 @@ header {
     font-size: 1.8rem;
 }
 
-main {
+#page-1 {
     display: grid;
     grid-template-rows: 1fr 5fr;
     align-items: center;
@@ -36,18 +37,12 @@ nav {
     place-items: center;
 }
 
-ul {
+#nav-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 200px;
     list-style: none;
     place-items: center;
-}
-
-footer {
-    position: absolute;
-    bottom: 0;
-    font-size: 1.3rem;
 }
 
 #recipes {
@@ -56,16 +51,20 @@ footer {
     place-items: center;
 }
 
-#recipe {
+.recipe {
     display: grid;
     grid-template-rows: 1fr 3fr;
     place-items: center;
     padding-block-end: 30px;
-    max-height: 550px;
+    min-height: 550px;
+    background-color: rgba(240, 255, 255, 0.219);
+    border-radius: 3%;
+    min-height: 50vh;
+    width: calc(25vw + 100px);
 }
 
 h1 {
-    font-size:6rem;
+    font-size: 6rem;
     background-color: rgba(240, 255, 255, 0.089);
     padding: 15px;
 }
@@ -78,17 +77,11 @@ h2 {
     font-size: 4rem;
 }
 
-section {
-    background-color: rgba(240, 255, 255, 0.219);
-    border-radius: 3%;
-    min-height: 50vh;
-    width: calc(25vw + 100px);
-}
-
-img {
+.home-img {
     max-width: 25vw;
     height: auto;
     border-radius: 25%;
+    object-fit: cover;
 }
 
 footer {
@@ -99,19 +92,88 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     padding-inline: 5%;
+    position: absolute;
+    bottom: 0;
+    font-size: 1.2rem;
 }
 
-footer > p {
+footer>p {
     grid-column: 2 / 3;
     justify-self: end;
 }
 
-footer > a {
+footer>a {
     width: fit-content;
 }
 
-@keyframes pizza {
-    :hover {
+.recipe-article {
+    background-color: rgba(240, 255, 255, 0.219);
+    border-radius: 3%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 100px auto;
+    height: 50vh;
+    width: 90vw;
+}
 
-    }
+/* @media query as soon as colmun-gap closes - img size remains ok until then */
+
+@keyframes pizza {
+    :hover {}
+}
+
+/* pizza.html - recipe */
+
+#page-2 {}
+
+.article-img {
+    width: 30%;
+    height: 90%;
+    border-radius: 25%;
+    object-fit: cover;
+}
+
+article {
+    height: 90%;
+    width: 18%;
+    background: linear-gradient(180deg,
+            #262727 0% 15%,
+            #121212 15% 100%);
+    border-radius: 15%;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 1.3rem;
+}
+
+#article-heading {
+    font-size: 2.2rem;
+    padding-block-end: 20px;
+}
+
+.u-list,
+.o-list,
+article>p {
+    height: 80%;
+    text-align: justify;
+    overflow: scroll;
+    scrollbar-color: cornsilk;
+    scrollbar-width: thin;
+}
+
+article>p::first-letter {
+    font-size: 3rem;
+}
+
+article>p {
+    scrollbar-width: none;
+}
+
+.u-list>li::marker {
+    color: cornsilk;
+}
+
+.u-list>li, .o-list>li {
+    margin-inline: 20px;
+    padding-block: 5px;
 }
