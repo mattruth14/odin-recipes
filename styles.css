@@ -113,12 +113,6 @@ footer>a {
     width: 90vw;
 }
 
-/* @media query as soon as colmun-gap closes - img size remains ok until then */
-
-@keyframes pizza {
-    :hover {}
-}
-
 /* recipes/ */
 
 .article-img {
@@ -178,7 +172,23 @@ article>p {
     color: cornsilk;
 }
 
-.u-list>li, .o-list>li {
+.u-list>li,
+.o-list>li {
     margin-inline: 20px;
     padding-block: 5px;
+}
+
+
+/* @rules */
+
+@media (max-width: 1200px) {
+    #article-heading {
+        font-size: 1.4rem;
+    }
+}
+
+/* @media query as soon as colmun-gap closes - img size remains ok until then */
+
+@keyframes pizza {
+    :hover {}
 }
