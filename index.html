@@ -3,23 +3,47 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <link href="styles.css" rel="stylesheet">
-    <title></title>
+    <meta name="description" content="odin-recipes foundation project">
+    <link href="/styles.css" rel="stylesheet">
+    <title>Recipes</title>
 </head>
 
 <body>
     <header>
         <nav>
-
+            <a href="/index.html" id="home">Home</a>
+            <ul>
+                <li><a href="/recipes/pizza.html">Pizza</a></li>
+                <li><a href="/recipes/toastie.html">Toastie</a></li>
+                <li><a href="/recipes/soup.html">Soup</a></li>
+            </ul>
         </nav>
     </header>
     <main>
-
+        <h1>Odin Recipes</h1>
+        <div id="recipes">
+            <section id="recipe">
+                <h2>Pizza</h2>
+                <a href="recipes/pizza.html" class="image"><img src="images/pizza.jpg" alt="pizza" title="Pizza"
+                        loading="lazy"></a>
+            </section>
+            <section id="recipe">
+                <h2>Toastie</h2>
+                <a href="recipes/toastie.html" class="image"><img src="/images/toastie.jpg" alt="toastie"
+                        title="Toastie" loading="lazy"></a>
+            </section>
+            <section id="recipe">
+                <h2>Soup</h2>
+                <a href="recipes/soup.html" class="image"><img src="images/soup.jpg" alt="soup" title="Soup"
+                        loading="lazy"></a>
+            </section>
+        </div>
     </main>
     <footer>
-
+        <a href="/README.md">Click for References</a>
+        <p>theodinproject.com - Project by Matthew Rutherford.</p>
     </footer>
 </body>
 
